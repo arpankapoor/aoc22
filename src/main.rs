@@ -5,6 +5,7 @@ mod day1;
 mod day2;
 mod day3;
 mod day4;
+mod day5;
 
 const INPUT_DIR: &str = "inputs";
 
@@ -23,6 +24,7 @@ fn main() {
         "2" => day2::solve(input),
         "3" => day3::solve(input),
         "4" => day4::solve(input),
+        "5" => day5::solve(input),
         _ => {
             eprintln!("invalid day: {}", day);
             std::process::exit(1);
