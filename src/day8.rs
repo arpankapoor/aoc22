@@ -96,5 +96,9 @@ impl Grid {
 
 pub fn solve(input: String) {
     let grid: Grid = input.as_str().into();
-    println!("ans1 = {}, ans2 = {}", grid.visible_count(), grid.max_scenic_score());
+    println!(
+        "ans1 = {}, ans2 = {}",
+        grid.visible_count(),
+        grid.max_scenic_score()
+    );
 }
