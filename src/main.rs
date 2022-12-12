@@ -4,6 +4,7 @@ use std::path::Path;
 mod day1;
 mod day10;
 mod day11;
+mod day12;
 mod day2;
 mod day3;
 mod day4;
@@ -37,6 +38,7 @@ fn main() {
         "9" => day9::solve(input),
         "10" => day10::solve(input),
         "11" => day11::solve(input),
+        "12" => day12::solve(input),
         _ => {
             eprintln!("invalid day: {}", day);
             std::process::exit(1);
