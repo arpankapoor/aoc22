@@ -155,5 +155,5 @@ pub fn solve(input: String) {
         .flat_map(|&v| grid.shortest_path(Some(v)))
         .min()
         .unwrap();
-    println!("ans1 = {}, ans2 = {}", ans1, ans2);
+    println!("ans1 = {ans1}, ans2 = {ans2}");
 }

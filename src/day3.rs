@@ -31,5 +31,5 @@ pub fn solve(input: String) {
         let priority = get_priority(common);
         psum2 += priority as u64;
     }
-    println!("priority1: {}, priority2: {}", psum1, psum2);
+    println!("priority1: {psum1}, priority2: {psum2}");
 }

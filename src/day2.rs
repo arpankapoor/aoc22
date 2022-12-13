@@ -102,5 +102,5 @@ pub fn solve(input: String) {
         points1 += (own1 as u64) + (game.result() as u64);
         points2 += (result.get_own_shape(opponent) as u64) + (result as u64);
     }
-    println!("total points1: {}, total points2: {}", points1, points2);
+    println!("total points1: {points1}, total points2: {points2}");
 }

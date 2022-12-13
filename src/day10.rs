@@ -37,7 +37,7 @@ pub fn solve(input: String) {
     println!("ans1 = {signal_strength}");
     for row in crt {
         for c in row {
-            print!("{}", c);
+            print!("{c}");
         }
         println!();
     }

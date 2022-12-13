@@ -35,7 +35,7 @@ struct Operation {
 
 impl From<&str> for Operation {
     fn from(s: &str) -> Self {
-        let mut operation = s.split(" = ").skip(1).next().unwrap().split(" ");
+        let mut operation = s.split(" = ").nth(1).unwrap().split(' ');
         let lhs = operation.next().unwrap().into();
         let op = operation.next().unwrap().into();
         let rhs = operation.next().unwrap().into();
@@ -103,20 +103,12 @@ impl From<&str> for Monkey {
             .next()
             .unwrap()
             .split(": ")
-            .skip(1)
-            .next()
+            .nth(1)
             .unwrap()
             .split(", ")
             .map(|worry| worry.parse().unwrap())
             .collect();
-        let operation = lines
-            .next()
-            .unwrap()
-            .split(": ")
-            .skip(1)
-            .next()
-            .unwrap()
-            .into();
+        let operation = lines.next().unwrap().split(": ").nth(1).unwrap().into();
         let div_test = DivTest::from_lines(lines);
         Self {
             items,

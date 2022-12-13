@@ -50,5 +50,5 @@ pub fn solve(input: String) {
     for stack in &mut stacks2 {
         ans2.push(stack.pop_front().unwrap());
     }
-    println!("ans1 = {}, ans2 = {}", ans1, ans2);
+    println!("ans1 = {ans1}, ans2 = {ans2}");
 }

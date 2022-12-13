@@ -11,7 +11,7 @@ pub fn solve(input: String) {
         })
         .collect();
     let max_calories = calories.pop().expect("no values?");
-    println!("max calories: {}", max_calories);
+    println!("max calories: {max_calories}");
     println!(
         "sum of top 3: {}",
         max_calories + calories.pop().unwrap() + calories.pop().unwrap()

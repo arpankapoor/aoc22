@@ -31,5 +31,5 @@ pub fn solve(input: String) {
             overlap += 1;
         }
     }
-    println!("contained = {}, overlap = {}", contained, overlap);
+    println!("contained = {contained}, overlap = {overlap}");
 }
