@@ -1,4 +1,5 @@
-use std::{cmp::Ordering, collections::HashSet};
+use std::cmp::Ordering;
+use std::collections::HashSet;
 
 #[derive(Debug, Eq, Hash, Clone, Copy)]
 struct Point {
@@ -8,7 +9,7 @@ struct Point {
 
 impl From<&str> for Point {
     fn from(s: &str) -> Self {
-        let mut split = s.split(",");
+        let mut split = s.split(',');
         Self {
             x: split.next().unwrap().parse().unwrap(),
             y: split.next().unwrap().parse().unwrap(),
